@@ -2,7 +2,7 @@ import React from "react"
 import { Spring } from "react-spring/renderprops"
 import Navbar from "./Globals/Navbar"
 import Footer from "./Globals/Footer"
-// import PortfolioBtn from "../PortfolioBtn"
+import PortfolioBtn from "../components/PortfolioBtn"
 
 import { Link } from "gatsby"
 
@@ -59,7 +59,7 @@ function Home() {
                           textDecoration: "none",
                         }}
                       >
-                        {/* <PortfolioBtn renderAs="button"></PortfolioBtn> */}
+                        <PortfolioBtn renderAs="button"></PortfolioBtn>
                       </Link>
                     </div>
                   </div>

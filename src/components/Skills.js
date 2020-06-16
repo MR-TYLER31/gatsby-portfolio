@@ -1,6 +1,6 @@
 import React from "react"
 import Navbar from "./Globals/Navbar"
-// import Footer from "../Footer"
+import Footer from "./Globals/Footer"
 
 function Skills() {
   return (
@@ -110,7 +110,7 @@ function Skills() {
           </div>
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }

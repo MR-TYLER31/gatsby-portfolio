@@ -9,7 +9,6 @@ const Navigation = styled.nav`
   background-color: #fff;
   position: relative;
   justify-content: space-between;
-  text-transform: uppercase;
   margin: 0 auto;
   padding: 0 5vw;
   z-index: 2;
@@ -50,7 +49,7 @@ const Navbox = styled.div`
     padding-top: 3vh;
     background-color: #fff;
     transition: all 0.3s ease-in;
-    top: 14vh;
+    top: 18vh;
     left: ${props => (props.open ? "-100%" : "0")};
   }
 `
@@ -86,6 +85,7 @@ const Hamburger = styled.div`
     top: 10px;
   }
 `
+
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)

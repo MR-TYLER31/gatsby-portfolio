@@ -6,12 +6,12 @@ import styled from "styled-components"
 
 const NavItem = styled(Link)`
   text-decoration: none;
-  color: #111;
   display: inline-block;
   white-space: nowrap;
   margin: 0 1vw;
-  transition: all 200ms ease-in;
   position: relative;
+  font-size: 30px;
+  color: #b0b0b0;
 
   :after {
     position: absolute;
@@ -27,10 +27,8 @@ const NavItem = styled(Link)`
   }
 
   :hover {
-    color: #940002;
-    ::after {
-      width: 100%;
-    }
+    font-size: 30px;
+    color: grey;
   }
 
   :active {
@@ -44,17 +42,29 @@ const NavItem = styled(Link)`
   }
 `
 
+
 const NavbarLinks = () => {
   return (
     <>
-      <NavItem to="/">
+      <NavItem to="/" style={{ textDecoration: "none" }}>
         <span style={{ color: "black" }}>Tyler </span>
         <span style={{ color: "#b0b0b0" }}>Snyder</span>
       </NavItem>
-      <NavItem to="/skills">Skills</NavItem>
-      <NavItem to="/portfolio">Portfolio</NavItem>
-      <NavItem to="/resume">Resume</NavItem>
-      <NavItem to="/contact">Contact</NavItem>
+        <NavItem to="/skills" style={{ textDecoration: "none" }}>
+          Skills
+        </NavItem>
+        <NavItem
+          to="/portfolio"
+          style={{ textDecoration: "none" }}
+        >
+          Portfolio
+        </NavItem>
+        <NavItem to="/resume" style={{ textDecoration: "none" }}>
+          Resume
+        </NavItem>
+        <NavItem to="/contact" style={{ textDecoration: "none" }}>
+          Contact
+        </NavItem>
     </>
   )
 }
