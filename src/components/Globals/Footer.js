@@ -1,4 +1,5 @@
 import React from "react"
+import { FaEnvelope, FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa"
 
 function Footer() {
   return (
@@ -9,8 +10,9 @@ function Footer() {
             href="https://mail.google.com/mail/u/0/#inbox?compose=new"
             target="_blank"
             rel="noopener noreferrer"
+            className="social"
           >
-            <i className="fas fa-envelope social"></i>
+            <FaEnvelope />
           </a>
         </li>
         <li>
@@ -18,8 +20,9 @@ function Footer() {
             href="https://github.com/MR-TYLER31"
             target="_blank"
             rel="noopener noreferrer"
+            className="social"
           >
-            <i className="fab fa-github social"></i>
+            <FaGithub />
           </a>
         </li>
         <li>
@@ -27,8 +30,9 @@ function Footer() {
             href="https://www.linkedin.com/in/tyler-snyder-b6484313a/"
             target="_blank"
             rel="noopener noreferrer"
+            className="social"
           >
-            <i className="fab fa-linkedin-in social"></i>
+            <FaLinkedinIn />
           </a>
         </li>
         <li>
@@ -36,8 +40,9 @@ function Footer() {
             href="https://twitter.com/Tsnyder406"
             target="_blank"
             rel="noopener noreferrer"
+            className="social"
           >
-            <i className="fab fa-twitter social"></i>
+            <FaTwitter />
           </a>
         </li>
       </ul>
