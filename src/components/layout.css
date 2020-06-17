@@ -129,6 +129,12 @@ body {
     border-radius: 50px;
 }
 
+@media only screen and (max-width: 925px) {
+    .jumbotron {
+        width: 100%;
+    }
+}
+
 #portfolio-btn {
     display: block;
     border-radius: 30px;

@@ -33,6 +33,10 @@ const Toggle = styled.div`
   @media (max-width: 768px) {
     display: flex;
   }
+
+  @media (max-width: 925px) {
+    display: flex;
+  }
 `
 
 const Navbox = styled.div`
@@ -50,6 +54,18 @@ const Navbox = styled.div`
     background-color: #fff;
     transition: all 0.3s ease-in;
     top: 18vh;
+    left: ${props => (props.open ? "-100%" : "0")};
+  }
+
+  @media (max-width: 925px) {
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    justify-content: flex-start;
+    padding-top: 3vh;
+    background-color: #fff;
+    transition: all 0.3s ease-in;
+    top: 24vh;
     left: ${props => (props.open ? "-100%" : "0")};
   }
 `
