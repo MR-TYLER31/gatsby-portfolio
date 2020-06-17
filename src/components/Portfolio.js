@@ -3,7 +3,8 @@ import Navbar from "../components/Globals/Navbar"
 import Footer from "../components/Globals/Footer"
 import Projects from "./Globals/CardData"
 
-function Portfolio() {
+
+function Portfolio({img}) {
   return (
     <div className="jumbotron">
       <Navbar />

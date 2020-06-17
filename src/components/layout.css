@@ -186,6 +186,12 @@ body {
 .skills-card {
     background-image: linear-gradient(to bottom right, #0247ba, #3489eb);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 100%;
+}
+
+.skills-icon {
+   font-size: 80px;
+   color: white;
 }
 
 /* .project-card {
@@ -205,6 +211,7 @@ i {
     justify-content: center;
     list-style-type: none;
     margin-right: 50px;
+    margin-top: 40px;
     /* text-align: center; */
     /* margin: 0 auto; */
     /* width: 25%; */
@@ -214,11 +221,10 @@ i {
     color: #3489eb;
     font-size: 30px;
     padding: 10px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
 }
 
 .footer-container {
-    padding-top: 30px;
     border-top: 2px solid #d9dedc;
 }
 

@@ -12,7 +12,7 @@ const Projects = [
   {
     id: 2,
     name: "Employee Directory",
-    image: "/react-portfolio/img/display.PNG",
+    image: "../../images/display.PNG",
     description:
       "Be able to find all your employees with ease. Users can search or sort through the table.",
     built: "React, RandomUser.me API",
