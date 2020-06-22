@@ -118,6 +118,48 @@ body {
     border-radius: 0;
 }
 
+#resume-link {
+ text-decoration: none;
+ display: inline-block;
+ white-space: nowrap;
+ margin: 0 1vw;
+ position: relative;
+ font-size: 30px;
+ color: #b0b0b0;
+}
+
+ #resume-link:after {
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     width: 0%;
+     content: ".";
+     color: transparent;
+     background: #940002;
+     height: 1px;
+     transition: all 0.4s ease-in;
+ }
+
+ #resume-link:hover {
+     font-size: 30px;
+     color: grey;
+ }
+
+ #resume-link:active {
+     color: #333333;
+ }
+
+
+ @media (max-width: 768px) {
+     #resume-link {
+        padding: 15px 0;
+        font-size: 1.5rem;
+        z-index: 6;
+     }    
+ }
+ 
+
 
 .jumbotron {
     margin: 5% auto;

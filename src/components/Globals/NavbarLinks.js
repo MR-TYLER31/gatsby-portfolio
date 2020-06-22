@@ -3,6 +3,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
+import { useStaticQuery, graphql } from "gatsby"
+
 
 const NavItem = styled(Link)`
   text-decoration: none;
@@ -44,27 +46,47 @@ const NavItem = styled(Link)`
 
 
 const NavbarLinks = () => {
+ const data = useStaticQuery(graphql`
+   {
+     allFile(filter: { extension: { eq: "pdf" } }) {
+       edges {
+         node {
+           publicURL
+           name
+         }
+       }
+     }
+   }
+ `)
   return (
+    
     <>
       <NavItem to="/" style={{ textDecoration: "none" }}>
         <span style={{ color: "black" }}>Tyler </span>
         <span style={{ color: "#b0b0b0" }}>Snyder</span>
       </NavItem>
-        <NavItem to="/skills" style={{ textDecoration: "none" }}>
-          Skills
-        </NavItem>
-        <NavItem
-          to="/portfolio"
+      <NavItem to="/skills" style={{ textDecoration: "none" }}>
+        Skills
+      </NavItem>
+      <NavItem to="/portfolio" style={{ textDecoration: "none" }}>
+        Portfolio
+      </NavItem>
+       {data.allFile.edges.map((file, index) => {
+      return (
+        <a
+          href={file.node.publicURL}
+          target="_blank"
+          rel="noreferrer"
           style={{ textDecoration: "none" }}
+          id="resume-link"
         >
-          Portfolio
-        </NavItem>
-        <NavItem to="/resume" style={{ textDecoration: "none" }}>
           Resume
-        </NavItem>
-        <NavItem to="/contact" style={{ textDecoration: "none" }}>
-          Contact
-        </NavItem>
+        </a>
+      )
+        })}
+      <NavItem to="/contact" style={{ textDecoration: "none" }}>
+        Contact
+      </NavItem>
     </>
   )
 }

@@ -12,6 +12,7 @@ import { GrMysql, GrGatsbyjs } from "react-icons/gr"
 import { DiMongodb } from 'react-icons/di'
 import Footer from "./Globals/Footer"
 
+
 function Skills() {
   return (
     <div className="jumbotron">
