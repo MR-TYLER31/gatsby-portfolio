@@ -46,7 +46,7 @@ function Footer() {
           </a>
         </li>
       </ul>
-      <p className="lead text-center">Built with React JS</p>
+      <p className="lead text-center">Built with Gatsby JS</p>
     </div>
   )
 }
