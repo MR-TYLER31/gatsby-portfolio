@@ -1,10 +1,11 @@
 import React from "react"
 import Portfolio from "../components/Portfolio"
 
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const PortfolioPage = () => (
+const PortfolioPage = ({ data }) => (
   <Layout>
     <SEO title="Portfolio" />
     <Portfolio />

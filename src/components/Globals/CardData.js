@@ -2,7 +2,7 @@ const Projects = [
   {
     id: 1,
     name: "Trade and Play",
-    image: "../../images/tradenplay.PNG",
+    image: "../images/tradenplay.PNG",
     description:
       "Trade and play brings the excitement of sports card collecting onto the web. Collect cards by drafting players.",
     built: "React, Node, Express, MongoDB",
