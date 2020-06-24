@@ -240,6 +240,7 @@ body {
 .skills-icon {
    font-size: 80px;
    color: white;
+   margin-top: 25px;
 }
 
 /* .project-card {

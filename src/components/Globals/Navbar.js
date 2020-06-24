@@ -13,9 +13,9 @@ const Navigation = styled.nav`
   padding: 0 5vw;
   z-index: 2;
   align-self: center;
+  width: 95%;
 
   @media (max-width: 768px) {
-    position: sticky;
     height: 15vh;
     top: 0;
     left: 0;

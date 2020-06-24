@@ -71,7 +71,7 @@ const NavbarLinks = () => {
       <NavItem to="/portfolio" style={{ textDecoration: "none" }}>
         Portfolio
       </NavItem>
-       {data.allFile.edges.map((file, index) => {
+       {data.allFile.edges.map(file => {
       return (
         <a
           href={file.node.publicURL}
@@ -79,6 +79,7 @@ const NavbarLinks = () => {
           rel="noreferrer"
           style={{ textDecoration: "none" }}
           id="resume-link"
+          key={file.node.name}
         >
           Resume
         </a>

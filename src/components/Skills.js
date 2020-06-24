@@ -21,8 +21,8 @@ function Skills() {
         <h1>Skills</h1>
       </div>
       <div className="container">
-        <div className="row mt-5">
-          <div className="col-md-4 col-sm-6">
+        <div className="row">
+          <div className="col-md-4 col-sm-6 mt-3">
             <div className="card btn08 skills-card mt-3">
               <div className="card-body text-center">
                 <FaHtml5 className="skills-icon" />
@@ -35,7 +35,7 @@ function Skills() {
               </div>
             </div>
           </div>
-          <div className="col-md-4 col-sm-6">
+          <div className="col-md-4 col-sm-6 mt-3">
             <div className="card btn08 skills-card mt-3">
               <div className="card-body text-center">
                 <FaCss3Alt className="skills-icon" />
@@ -52,7 +52,7 @@ function Skills() {
             </div>
           </div>
 
-          <div className="col-md-4 col-sm-6">
+          <div className="col-md-4 col-sm-6 mt-3">
             <div className="card btn08 skills-card mt-3">
               <div className="card-body text-center">
                 <IoLogoJavascript className="skills-icon" />
@@ -71,7 +71,7 @@ function Skills() {
         </div>
 
         <div className="row mt-5">
-          <div className="col-md-4 col-sm-6">
+          <div className="col-md-4 col-sm-6 mt-3">
             <div className="card btn08 skills-card mt-3">
               <div className="card-body text-center">
                 <FaNodeJs className="skills-icon" />
@@ -88,7 +88,7 @@ function Skills() {
             </div>
           </div>
 
-          <div className="col-md-4 col-sm-6">
+          <div className="col-md-4 col-sm-6 mt-3">
             <div className="card btn08 skills-card mt-3">
               <div className="card-body text-center">
                 <GrGatsbyjs className="skills-icon" />
@@ -102,7 +102,7 @@ function Skills() {
             </div>
           </div>
 
-          <div className="col-md-4 col-sm-6">
+          <div className="col-md-4 col-sm-6 mt-3">
             <div className="card btn08 skills-card mt-3">
               <div className="card-body text-center">
                 <FaReact className="skills-icon" />
@@ -119,7 +119,7 @@ function Skills() {
           </div>
         </div>
         <div className="row mt-5">
-          <div className="col-md-4 col-sm-6">
+          <div className="col-md-4 col-sm-6 mt-3">
             <div className="card btn08 skills-card mt-3">
               <div className="card-body text-center">
                 <GrMysql className="skills-icon" />
@@ -133,7 +133,7 @@ function Skills() {
             </div>
           </div>
 
-          <div className="col-md-4 col-sm-6">
+          <div className="col-md-4 col-sm-6 mt-3">
             <div className="card btn08 skills-card mt-3">
               <div className="card-body text-center">
                 <DiMongodb className="skills-icon" />
@@ -147,7 +147,7 @@ function Skills() {
             </div>
           </div>
 
-          <div className="col-md-4 col-sm-6">
+          <div className="col-md-4 col-sm-6 mt-3">
             <div className="card btn08 skills-card mt-3">
               <div className="card-body text-center">
                 <FaGitSquare className="skills-icon" />
