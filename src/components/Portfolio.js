@@ -42,7 +42,7 @@ function Portfolio() {
             </div>
             <div className="container">
               <div className="row mt-5 align-items-center">
-                {data.projects.edges.reverse().map(({ node: project }) => (
+                {data.projects.edges.map(({ node: project }) => (
                   <div
                     key={project.id}
                     className="col-lg-4  col-md-6 col-sm-12  align-self-center"
