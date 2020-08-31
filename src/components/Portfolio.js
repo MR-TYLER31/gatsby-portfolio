@@ -1,9 +1,8 @@
 import React from "react"
 import Navbar from "../components/Globals/Navbar"
 import Footer from "../components/Globals/Footer"
-// import Projects from "./Globals/CardData"
 import { StaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import Img from "gatsby-image";
 
 
 const getProducts = graphql`
@@ -29,7 +28,14 @@ const getProducts = graphql`
 }
 `;
 
+// const useStyles = makeStyles({
+//   root: {
+//     maxWidth: 345,
+//   },
+// })
+
 function Portfolio() {
+  // const classes = useStyles()
   return (
     <StaticQuery
       query={getProducts}
@@ -45,9 +51,9 @@ function Portfolio() {
                 {data.projects.edges.map(({ node: project }) => (
                   <div
                     key={project.id}
-                    className="col-lg-4  col-md-6 col-sm-12  align-self-center"
+                    className=" col-xl-4 col-lg-6  col-md-6 col-sm-12  align-self-center"
                   >
-                    <div className="card project-card dtl24 mt-3">
+                    <div className="card project-card dtl24 mt-3 h-80">
                       <Img
                         fluid={project.image.fluid}
                         className="card-img-top"

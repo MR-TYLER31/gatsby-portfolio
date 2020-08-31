@@ -3,7 +3,7 @@
   "private": true,
   "description": "Tyler's Gatsby Portfolio",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "",
   "dependencies": {
     "dotenv": "^8.2.0",
     "gatsby": "^2.23.3",
